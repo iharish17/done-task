@@ -39,14 +39,14 @@ const Index = () => {
     <div className="min-h-screen relative">
       <BackgroundOrbs />
       
-      <div className="relative z-10 max-w-xl mx-auto px-6 py-16">
+      <div className="relative z-10 max-w-xl mx-auto px-4 sm:px-6 py-8 sm:py-16">
         {/* Header */}
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-3 mb-4">
-            <div className="w-12 h-12 rounded-2xl bg-primary/20 flex items-center justify-center">
-              <CheckCircle2 className="w-7 h-7 text-primary" />
+        <div className="text-center mb-8 sm:mb-12">
+          <div className="inline-flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-primary/20 flex items-center justify-center">
+              <CheckCircle2 className="w-5 h-5 sm:w-7 sm:h-7 text-primary" />
             </div>
-            <h1 className="text-4xl font-bold tracking-tight">Tasks</h1>
+            <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">Tasks</h1>
           </div>
           {todos.length > 0 && (
             <p className="text-muted-foreground">
@@ -56,7 +56,7 @@ const Index = () => {
         </div>
 
         {/* Add Todo */}
-        <div className="mb-8">
+        <div className="mb-6 sm:mb-8">
           <AddTodo onAdd={addTodo} />
         </div>
 
